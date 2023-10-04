@@ -1,0 +1,138 @@
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('yeh.jpg'); /* Remplacez 'votre-image.jpg' par le chemin de votre image */
+    background-size: cover;
+    filter: blur(10px); /* Ajustez la valeur (en pixels) pour le flou souhaité */
+    z-index: -1;
+}
+
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centre horizontalement le texte "Mon Portfolio" */
+}
+
+nav {
+    background-color: #444;
+    text-align: center;
+    padding: 5px 0; /* Ajustez la valeur pour l'espacement souhaité */
+    width: 100%;
+    position: fixed;
+    top: 70px; /* Espacement entre le header et le nav */
+    left: 0;
+    z-index: 100;
+}
+
+nav a {
+    display: inline-block; /* Affiche les liens en tant que blocs pour centrer le texte */
+    margin: 0 15px; /* Ajustez la marge horizontale pour espacer les liens */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Centre le texte horizontalement */
+}
+.projet {
+    width: 250px;
+    height: 100px;
+    background-color: #007bff;
+   
+    text-align: center;
+    margin: 10px;
+    display: flex; /* Utilisation de flexbox pour centrer verticalement */
+    align-items: center; /* Centre le texte verticalement */
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    word-wrap: break-word;
+    overflow: hidden;
+    
+}
+
+.projet a{ 
+    text-decoration: none; 
+    color: black; /* Couleur du texte en noir */
+    line-height: 50px;
+}
+
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 98.95%;
+
+}
+
+.projet {
+    width: 250px; /* Augmenter la largeur des blocs */
+    height: 100px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.projet:hover {
+    background-color: #0056b3;
+}
